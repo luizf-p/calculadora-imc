@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de IMC</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 128 128'><text x='50%' y='60%' font-family='Arial, sans-serif' font-size='70' font-weight='bold' fill='%235a67d8' text-anchor='middle' dominant-baseline='middle'>IMC</text></svg>">
+</head>
+
+<body>
+  <div class="container">
+    <div class="card">
+      <div class="header">
+        <h1><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+            <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+          </svg> Calculadora de IMC</h1>
+        <p>Descubra seu Índice de Massa Corporal</p>
+      </div>
+
+      <form id="formulario">
+        <div class="form-group">
+          <label for="peso">Peso (kg)</label>
+          <input type="number" id="peso" step="0.01" placeholder="Ex: 70">
+        </div>
+
+        <div class="form-group">
+          <label for="altura">Altura (m)</label>
+          <input type="number" id="altura" step="0.01" placeholder="Ex: 1.70">
+        </div>
+
+        <button type="submit">Calcular IMC</button>
+      </form>
+
+      <div id="resultado"></div>
+
+      <div class="classificacao">
+        <h3>Classificação do IMC:</h3>
+        <ul>
+          <li>Abaixo de 18.5: Abaixo do peso</li>
+          <li>18.6 a 24.9: Peso normal</li>
+          <li>25.0 a 29.9: Sobrepeso</li>
+          <li>30.0 a 34.9: Obesidade grau I</li>
+          <li>35.0 a 39.9: Obesidade grau II</li>
+          <li>40.0 ou mais: Obesidade grau III</li>
+        </ul>
+      </div>
+    </div>
+
+    <footer>
+      <p>© 2025 Calculadora de IMC. Todos os direitos reservados.</p>
+    </footer>
+  </div>
+
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
